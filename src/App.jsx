@@ -23,8 +23,8 @@ export default function App() {
         <div className={styles.navigation}>
             <DataTree data={treeData}/>
         </div>
-        <div className='workarea'>
-          <p>this is work area</p>
+        <div className={styles.workarea}>
+          <Workarea/>
         </div>
       </div>
     </div>
