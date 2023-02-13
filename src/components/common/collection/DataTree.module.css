@@ -1,0 +1,4 @@
+.dataTreeNode{
+    display: flex;
+    grid-gap: .5rem;
+}

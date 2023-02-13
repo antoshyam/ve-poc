@@ -1,0 +1,20 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: .5rem;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 1rem;
+    height: 100%;
+}
+
+.navigation{
+    flex-grow: .2;
+    max-width: 20%;
+    white-space: nowrap;
+    overflow: auto;
+    height: 100%;
+}
