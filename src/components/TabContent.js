@@ -10,7 +10,7 @@ const TabContent = ({data}) => {
         {
             data?.map(tabContent => 
             <Accordion header={tabContent.sectionName} collapsible showContent={true}>
-                <WorkareaForm data={tabContent.formData}></WorkareaForm>
+                <WorkareaForm data={tabContent.formData} columns={tabContent.formColumns}></WorkareaForm>
             </Accordion>)
         }
 

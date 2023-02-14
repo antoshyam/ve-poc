@@ -3,8 +3,8 @@ import Form from './common/layouts/Form'
 import FormInput from './FormInput'
 import './WorkareaForm.css'
 
-const WorkareaForm = ({data}) => {
-    return <Form columns={4} className='workareaForm'>
+const WorkareaForm = ({data, columns}) => {
+    return <Form columns={columns ? columns : 4} className='workareaForm'>
         {
             data?.map(input => <FormInput label={input.label} value={input.value} required/>)
         }

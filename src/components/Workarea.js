@@ -10,7 +10,7 @@ export default function Workarea({data}) {
     return <div>
         <WorkareaActions />
         <div className='workareaContainer'>
-            <WorkareaForm data={data?.formData}/>
+            <WorkareaForm data={data?.formData} columns={data?.formColumns}/>
             <WorkareaTabs data={data?.tabData}/>
         </div>
     </div>

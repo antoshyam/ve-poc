@@ -223,6 +223,7 @@ const prepareWorkareaData = (type) => {
                         tabData: [
                             {
                                 sectionName: "BACKGROUND INFORMATION",
+                                formColumns: 3,
                                 formData: [
                                     {
                                         label: "Engagement Type",
