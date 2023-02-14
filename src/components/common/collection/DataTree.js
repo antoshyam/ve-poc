@@ -19,7 +19,7 @@ const DataTree = props => {
     };
 
     const handleItemClick = nodePath => {
-        onItemClick(nodePath)
+            onItemClick(nodePath)
     };
 
     return rendered ? (
@@ -27,7 +27,7 @@ const DataTree = props => {
             {
                 data?.map((node, nodeIndex) => {
                     return <li key={nodeIndex}>
-                        <div className={styles.dataTreeNode} onClick={() =>
+                        <div className={styles.dataTreeNode} onClick={ !Array.isArray(node.NodeData) ? () => handleItemClick([..._traversalPath, node.NodeLabel]) : () =>
                             handleNodeToggle(`${_traversalPath.join('_')}_${node.NodeLabel}`)
                         }
                             key={_expandedNodes}>

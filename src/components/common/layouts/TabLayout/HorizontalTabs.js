@@ -22,20 +22,21 @@ const HorizontalTabs = props => {
   };
 
   return (
-    <div className="w3-container">
-        <Col style={{backgroundColor :"#F6F8FA" }}>
+    <div>
+        <Col style={{display:'flex'}}>
         {React.Children.map(props.children, tab => {
           return (
             <Row
             onClick={onTabClick ? () => onTabClick(tab.props.name) : (event) => openTab(event,tab.props.name)}
               className={(activeTabInternal == tab.props.name  ? activeTabClass : defaultTabClass)+" "+ (tab.props.validationState?"qc-tab-text-"+tab.props.validationState:"")}
-              style={{ cursor: "pointer", display:'table-cell'}}
+              style={{ cursor: "pointer"}}
             >
               {tab.props.name}
             </Row>
           );
         })}
         </Col>
+        <div className="tab-content-container">
         {
             React.Children.map(props.children, tab=> {
                 return (
@@ -45,6 +46,7 @@ const HorizontalTabs = props => {
                 )
             })
         }
+        </div>
         
         {/* <Col style={{backgroundColor :"#F6F8FA" }}>
         {React.Children.map(props.children, tab => {

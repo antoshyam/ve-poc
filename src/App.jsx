@@ -13,6 +13,7 @@ import DataTree from './components/common/collection/DataTree';
 export default function App() {
   const dispatch = useDispatch()
   let treeData = useSelector(state => state.navigation.data)
+  let workareaData = useSelector(state => state.workarea.data)
 
   useEffect(() => dispatch(initializeNavigation()), [dispatch])
 
@@ -21,10 +22,10 @@ export default function App() {
       <div className={styles.branding}>Entity Card</div>
       <div className={styles.content}>
         <div className={styles.navigation}>
-            <DataTree data={treeData}/>
+            <NavigationArea data={treeData}/>
         </div>
         <div className={styles.workarea}>
-          <Workarea/>
+          <Workarea data={workareaData}/>
         </div>
       </div>
     </div>

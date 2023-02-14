@@ -40,9 +40,8 @@ const Form = props => {
       }
     : null;
   return rendered ? (
-    <Col {...gridCount}>
+    <Col {...gridCount} className={className}>
       <form
-        className={className}
         style={style}
         onSubmit={onSubmitBind}
         {...rest}

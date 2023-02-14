@@ -5,7 +5,7 @@ const WorkareaReducer = (
     , action
 ) => {
     switch (action.type) {
-        case ActionConstants.INITIALIZING.WORKAREA:
+        case ActionConstants.FETCHED.WORKAREA:
             return {
                 ...state,
                 data: action.payload
