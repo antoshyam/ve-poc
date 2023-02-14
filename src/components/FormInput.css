@@ -1,0 +1,17 @@
+.formLabel{
+    font-size: 11px;
+    color: #4E6585;
+    font-weight: bold;
+}
+
+.formValue{
+    display: block;
+    margin-bottom: 16px;
+}
+
+.requiredIndicator{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+

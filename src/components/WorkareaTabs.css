@@ -1,0 +1,44 @@
+.defaultTabClassName{
+    font-size: 11px;
+    font-weight: normal;
+    background-color: #CDE5F7;
+    color: #4E6585;
+    border-color: #D3E4F5;
+    padding: 5px;
+    border: #B3CBEA 1px solid;
+    cursor: pointer;
+    cursor: hand;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    border-radius: 7px 7px 0px 0px;
+    margin-right: 8px;
+}
+
+.activeTabClassName{
+    background-color: #1181CA !important;
+    font-size: 11px;
+    font-weight: bold !important;
+    border: #0173BD 1px solid;
+    color: #FFFFFF !important;
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    cursor: hand;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.tab{
+    font-size: 11px;
+    font-weight: normal;
+    border-top: 6px #0173BD solid;
+    border-bottom: #0173BD 6px solid;
+    border-right: #0173BD 2px solid;
+    border-left: #0173BD 2px solid;
+    padding-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 4px 6px rgba(0,0,100,0.3);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 4px 6px rgb(0 0 100 / 30%);
+}

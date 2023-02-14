@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
