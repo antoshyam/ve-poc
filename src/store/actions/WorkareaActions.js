@@ -26,6 +26,7 @@ export const setUpWorkareaData = (nodePath) => {
 const prepareWorkareaData = (type) => {
     if (type == "Entity") {
         return {
+            "pageHeader": "Entity Card",
             "formData": [
                 {
                     label: "Entity Name",
@@ -171,6 +172,7 @@ const prepareWorkareaData = (type) => {
         }
     }else if(type == "Engagement"){
             return {
+                "pageHeader": "Engagement Card",
                 "formColumns":3,
                 "formData": [
                     {
